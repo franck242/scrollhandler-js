@@ -1,0 +1,66 @@
+* {
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    font-size: 25px;
+    background-color: rgb(36, 120, 255);
+    transition: font-size 0.5s, background-color 0.5s;
+
+}
+
+nav ul a {
+    color: black;
+    text-decoration: none;
+
+}
+
+header,
+section {
+   min-height: 100vh;
+   min-width: 100vh;
+    border-top: 1px dotted black;
+
+}
+
+ul {
+
+    list-style-type: none;
+    /* margin:0; */
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+h1,
+h2 {
+    padding-top: 50px;
+
+}
+
+/* sélecteur pour l'élement nav, uniquement lorsque l'élément body possède la classe "scrollrd" */
+
+body.scrolled nav {
+    background-color: rgba(0, 0, 0, 0.33);
+    font-size: 16px;
+}
+
+#section-1 {
+    height: 100vh;
+    background-image: url("./img/muguiwara.jpg");
+    background-size: cover;
+    background-repeat: no-reapeat;
+}
